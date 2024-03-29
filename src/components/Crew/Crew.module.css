@@ -1,0 +1,71 @@
+.crew {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  /* justify-content: space-around; */
+}
+
+.crew > div:nth-child(1) {
+  flex-basis: 620px;
+  display: flex;
+  flex-direction: column;
+}
+
+.crew > div:nth-child(2) {
+  flex-basis: 560px;
+}
+
+.crew > div:nth-child(2) {
+  height: 580px;
+  transform: translateY(-30px);
+}
+
+.crew > div:nth-child(2) > img {
+  height: 100%;
+}
+
+.job-title {
+  color: #d0d6f9;
+  font-family: "Bellefair", serif;
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+
+.name {
+  color: #fff;
+  font-size: 56px;
+  font-family: "Bellefair", serif;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+  width: 65%;
+  line-height: 2;
+}
+
+@media (max-width: 1240px) {
+  .crew {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .crew > div:nth-child(1) {
+    align-items: center;
+    flex-basis: fit-content;
+  }
+  
+  .description {
+    width: 70%;
+  }
+}
+
+@media (max-width: 900px) {
+  .name {
+    font-size: 40px;
+  }
+}

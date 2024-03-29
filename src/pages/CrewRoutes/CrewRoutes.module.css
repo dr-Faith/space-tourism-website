@@ -1,0 +1,63 @@
+.crew {
+  height: 100vh;
+  background-image: url('../../../public/assets/crew/background-crew-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.crew > div {
+  height: 60%;
+  padding: 0 54px 54px 54px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.nav-description {
+  width: 93.5%;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 24px;
+}
+
+.nav-index {
+  color: #d0d6f9;
+}
+
+.nav-heading {
+  margin-left: .5em;
+}
+
+.link {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background-color: #d0d6f9;
+}
+
+@media (max-width: 1240px) {
+  .crew {
+    min-height: 100vh;
+    height: fit-content;
+    background-image: url('../../../public/assets/crew/background-crew-tablet.jpg');
+    /* text-align: center; */
+  }
+
+  .nav-description {
+    margin-bottom: 2rem;
+    order: -1;
+  }
+
+  .crew > div {
+    height: 100%;
+    padding: 0;
+    padding-top: 12rem;
+    position: relative;
+  }
+
+}

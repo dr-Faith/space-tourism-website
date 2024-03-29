@@ -1,0 +1,74 @@
+.destination {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.destination > div {
+  flex-basis: 450px;
+}
+
+.destination-hr {
+  border: none;
+  border-bottom: .01em solid #d0d6f9;
+  margin: 2rem 0 2rem;
+  width: 100%;
+}
+
+.name {
+ font-family: "Bellefair", serif;
+ font-size: 100px;
+ color: #fff; 
+}
+
+.description {
+ color: #d0d6f9;
+ font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 400;
+ line-height: 2;
+}
+
+.avg-dist {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.35;
+  color: #d0d6f9;
+}
+
+.est-travel {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.35;
+  color: #d0d6f9;
+}
+
+.description-footer {
+  display: flex;
+  width: 100%;
+}
+
+.description-footer > div {
+  flex: 1;
+}
+
+.footer-info {
+  color: #fff;
+  font-size: 28px;
+  font-family: "Bellefair", serif;
+}
+
+
+@media (max-width: 1240px) {
+  .destination {
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+  }
+
+  .destination > div:nth-child(1) > img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+

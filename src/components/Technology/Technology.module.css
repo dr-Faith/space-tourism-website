@@ -1,0 +1,56 @@
+.technology {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.technology > div:nth-child(2) {
+  width: fit-content;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.technology > div:nth-child(2) > img {
+  /* transform: translateX(100px); */
+  /* width: 100%; */
+}
+
+.terminology {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 32px;
+  font-family: "Bellefair", serif;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+  line-height: 2;
+}
+
+@media (max-width: 1240px) {
+
+  .technology {
+    flex-direction: column-reverse;
+  }
+
+  .technology > div:nth-child(2) > img {
+    width: 100%;
+  }
+
+  .technology > div:nth-child(1) {
+    text-align: center;
+    height: 400px;
+  }
+
+  .description {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
