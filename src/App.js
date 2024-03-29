@@ -1,6 +1,5 @@
 import "./App.css";
-import NavbarDesktop from "./components/Navbar/NavbarDesktop";
-import NavbarMobile from "./components/Navbar/NavbarMobile";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import DestinationRoutes from "./pages/DestinationRoutes/DestinationRoutes";
 import CrewRoutes from "./pages/CrewRoutes/CrewRoutes";
@@ -136,7 +135,7 @@ function App() {
 
 	return (
 		<BrowserRouter className="app">
-			<NavbarDesktop />
+			<Navbar />
 			<Routes>
 				<Route path="/" exact element={<Navigate to="/home" />} />
 				<Route path="/home" element={<Home />} />
