@@ -81,6 +81,29 @@
   }
 }
 
-@media (max-width: 600px) {
-  
+@media (max-width: 680px) {
+
+  .space {
+    font-size: 100px;
+  }
+
+  .explore-button {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    line-height: 150px;
+  }
+
+  .explore-button-wrap {
+    padding: 50px;
+  }
+
+  .home {
+    align-items: flex-start;
+    background-image: url('../../../public/assets/home/background-home-mobile.jpg');
+  }
+
+  .home-content > div:nth-child(1) {
+    margin-bottom: 2rem;
+  }
 }

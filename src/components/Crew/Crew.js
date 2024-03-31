@@ -15,6 +15,7 @@ const Crew = (props) => {
     </div>
     <div>
       <img src={imgSrc} alt="" />
+      <hr className={classes['img-hr']}/>
     </div>
   </div>
 }

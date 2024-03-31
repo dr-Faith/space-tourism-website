@@ -46,3 +46,11 @@
     padding: 0;
   }
 }
+
+@media (max-width: 680px) {
+
+  .technology-page {
+    background-image: url('../../../public/assets/technology/background-technology-mobile.jpg');
+    height: calc(100vh + 150px);
+  }
+}

@@ -35,5 +35,17 @@
     transform: translateX(-50%);
     margin-left: 0
   }
+}
 
+@media (max-width: 680px) {
+  .nav-links {
+    top: 65%;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-links {
+    top: 65%;
+  }
 }

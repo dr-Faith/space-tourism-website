@@ -43,6 +43,7 @@
     padding-bottom: 0px;
     min-height: 100%;
     height: calc(100vh + 400px);
+    /* justify-content: flex-start; */
     position: relative;
     background-image: url('../../../public/assets/destination/background-destination-tablet.jpg');
     /* text-align: center; */
@@ -58,5 +59,22 @@
 
   .nav-description {
     margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .destination-page {
+    text-align: center;
+    height: calc(100vh + 250px);
+    justify-content: flex-start;
+    background-image: url('../../../public/assets/destination/background-destination-mobile.jpg');
+  }
+
+  .nav-description {
+    width: 100%;
+  }
+
+  .links {
+    top: 47%;
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import CustomLink from '../../components/CustomLink/CustomLink';
-import { Route, Routes, Outlet, useLocation } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import classes from './DestinationRoutes.module.css';
 
 
@@ -20,6 +20,7 @@ const DestinationRoutes = (props) => {
       </div>
       <div className={classes['links']}>
        {destinations.map(destination => <CustomLink 
+          addClass='dest-link'
           text={destination.toUpperCase()}
           to={`${destination}`}
         />)}

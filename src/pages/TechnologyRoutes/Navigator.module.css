@@ -44,8 +44,14 @@
 }
 
 
-@media (max-width: 684px) {
+@media (max-width: 680px) {
   .navigator {
     top: 38%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigator {
+    top: 30%;
   }
 }

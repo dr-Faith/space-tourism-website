@@ -9,7 +9,7 @@ const CustomLink = (props) => {
 
 	
 	return (
-		<NavLink to={props.to} className={({isActive, isPending}) => isPending ? classes['link'] : isActive ? `${classes['link']} ${classes['active']}` : classes['link'] }>
+		<NavLink to={props.to} className={({isActive, isPending}) => isPending ? props.addClass ? `${classes['link']} ${classes[props.addClass]}` : classes['link'] : isActive ? props.addClass ? `${classes['link']} ${classes['active']} ${classes[props.addClass]}` : `${classes['link']} ${classes['active']}` : classes['link'] }>
 			{props.index && <span className={classes['index']}>{props.index}</span>}
 			<span className={classes['text']}>{props.text}</span>
 		</NavLink>

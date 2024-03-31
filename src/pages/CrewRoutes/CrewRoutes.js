@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './CrewRoutes.module.css'
-import { NavLink, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import Navigator from './Navigator'
 
 

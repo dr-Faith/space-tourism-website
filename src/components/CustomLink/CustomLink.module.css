@@ -12,6 +12,7 @@
   line-height: 100px;
   text-align: left;
   text-decoration: none;
+  letter-spacing: .2rem;
 }
 
 .index {
@@ -55,6 +56,11 @@ a.active::after {
 @media (max-width: 680px) {
   .link::after {
     display: none
+  }
+
+  .dest-link::after {
+    display: block;
+    bottom: -.5rem;
   }
 
   .index {

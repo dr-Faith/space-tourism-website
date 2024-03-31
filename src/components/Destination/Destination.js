@@ -1,5 +1,4 @@
 import React from 'react';
-import CustomLink from '../../components/CustomLink/CustomLink';
 import classes from './Destination.module.css'
 
 
